@@ -1,13 +1,13 @@
 package btree
 
 type Entry struct {
-	Key   string
-	Value string
+	key   uint8
+	value string
 }
 
-func NewEntry(key, value string) *Entry {
+func NewEntry(key uint8, value string) *Entry {
 	return &Entry{
-		Key:   key,
-		Value: value,
+		key:   key,
+		value: value,
 	}
 }
